@@ -31,7 +31,7 @@ try {
 
 #Download Storage Explorer
 try {
-    Invoke-WebRequest -Uri "https://go.microsoft.com/fwlink/?linkid=2216182&clcid=0x409" -UseBasicParsing -OutFile "$($env:ProgramData)\StorageExplorer.exe"
+    Invoke-WebRequest -Uri "https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.20.1/Windows_StorageExplorer.exe" -UseBasicParsing -OutFile "$($env:ProgramData)\StorageExplorer.exe"
     Write-Log -Value "Downloaded Storage Explorer"
 }
 catch {
